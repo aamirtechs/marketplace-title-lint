@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketplace Title Lint: Lint a whole listing CSV against Amazon 2025 title rules, 20...</title>
+<meta name="description" content="Lint a whole listing CSV against Amazon 2025 title rules, 200 characters, no word repeated more than twice and no banned characters, with configurable limits, platform presets and auto-trim suggestions.">
+<meta name="keywords" content="Amazon title checker 200 characters, Amazon product title requirements 2025 checker, bulk listing title validator, keyword stuffing checker Amazon">
+<meta name="author" content="Amir Hussain">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://aamirtechs.github.io/marketplace-title-lint/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#0b1f3a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Marketplace Title Lint">
+<meta property="og:description" content="Lint a whole listing CSV against Amazon 2025 title rules, 200 characters, no word repeated more than twice and no banned characters, with configurable limits, platform presets and auto-trim suggestions.">
+<meta property="og:url" content="https://aamirtechs.github.io/marketplace-title-lint/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Marketplace Title Lint">
+<meta name="twitter:description" content="Lint a whole listing CSV against Amazon 2025 title rules, 200 characters, no word repeated more than twice and no banned characters, with configurable limits, platform presets and auto-trim suggestions.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Marketplace Title Lint", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Person", "name": "Amir Hussain", "url": "https://aamirtechs.com"}, "url": "https://aamirtechs.github.io/marketplace-title-lint/", "description": "Lint a whole listing CSV against Amazon 2025 title rules, 200 characters, no word repeated more than twice and no banned characters, with configurable limits, platform presets and auto-trim suggestions."}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b1f3a;--navy2:#122c50;--gold:#d4a72c;--ink:#16233a;--muted:#5a6a84;--line:#e3e9f2;--bg:#f6f8fb;--card:#ffffff}
+*{box-sizing:border-box}body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:44px 20px 34px;text-align:center}
+header h1{font-family:'Sora',sans-serif;font-size:2rem;margin:0 0 10px}header h1 span{color:var(--gold)}
+header p{max-width:720px;margin:0 auto 16px;color:#dbe4f2}
+.stats{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.stats span{border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:5px 14px;font-size:.85rem}
+main{max-width:980px;margin:-18px auto 0;padding:0 16px 30px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:0 8px 30px rgba(11,31,58,.08)}
+label{display:block;font-weight:700;font-size:.9rem;margin:14px 0 6px}
+textarea,input[type=text],input[type=number],select{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;font:inherit;background:#fff}
+textarea{min-height:150px;font-family:ui-monospace,Menlo,monospace;font-size:.85rem}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.btn-run{background:var(--gold);color:var(--navy);border:0;border-radius:9px;padding:12px 22px;font-weight:800;cursor:pointer;font-size:1rem;margin-top:16px}
+.btn-sub{background:var(--navy);color:#fff;border:0;border-radius:9px;padding:10px 16px;font-weight:700;cursor:pointer;margin:8px 8px 0 0}
+.btn-ghost{background:#fff;color:var(--navy);border:1px solid var(--navy);border-radius:9px;padding:9px 15px;font-weight:700;cursor:pointer;margin:8px 8px 0 0}
+table{width:100%;border-collapse:collapse;margin-top:14px;font-size:.87rem}
+th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:var(--navy);color:#fff}
+.flag{color:#b3261e;font-weight:700}.ok{color:#137333;font-weight:700}
+pre{background:#0b1f3a;color:#e8eef8;border-radius:10px;padding:14px;overflow:auto;font-size:.82rem;white-space:pre-wrap;word-break:break-word}
+.privacy{color:var(--muted);font-size:.9rem;margin-top:14px}
+section.how{max-width:980px;margin:22px auto;padding:0 16px}
+section.how h2{font-family:'Sora',sans-serif}
+footer{background:var(--navy);color:#dbe4f2;text-align:center;padding:24px 16px;margin-top:30px;font-size:.92rem}
+footer a{color:var(--gold)}
+.small{font-size:.85rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <h1>Marketplace Title Lint</h1>
+  <p>Lint a whole listing CSV against Amazon 2025 title rules, 200 characters, no word more than twice and no banned characters, before Amazon rewrites your titles.</p>
+  <div class="stats"><span>Free</span><span>100% in your browser</span><span>No sign-up</span></div>
+</header>
+<main>
+  <div class="card">
+    <label for="fileInput">Upload a listing CSV</label>
+    <input type="file" id="fileInput" accept=".csv,text/csv,text/plain">
+    <label for="csvInput">Or paste CSV here (needs a title column, optional search terms column)</label>
+    <textarea id="csvInput">sku,title,search terms
+SKU-1,Stainless Steel Water Bottle 750ml Insulated Travel Flask,steel water bottle insulated flask
+SKU-2,Best BEST Bottle! Sale $pecial Steel Steel Steel Bottle For Travel And Gym And Sports Use,steel bottle
+SKU-3,SUPER STRONG STEEL BOTTLE FOR TRAVEL,travel bottle</textarea>
+    <div class="row">
+      <div><label for="presetSel">Platform preset</label>
+        <select id="presetSel"><option value="amazon">Amazon (200 chars)</option><option value="ebay">eBay (140 chars)</option><option value="etsy">Etsy (140 chars)</option><option value="shopify">Shopify (255 chars)</option></select></div>
+      <div><label for="maxChars">Max characters</label><input type="number" id="maxChars" value="200" min="10"></div>
+      <div><label for="maxRepeats">Max repeats per word</label><input type="number" id="maxRepeats" value="2" min="1"></div>
+      <div><label for="titleCol">Title column name</label><input type="text" id="titleCol" value="" placeholder="auto detect"></div>
+    </div>
+    <div class="row">
+      <div><label for="bannedChars">Banned characters</label><input type="text" id="bannedChars" value="!$?_{}^~`<>|"></div>
+      <div><label for="termsBytes">Search terms byte limit</label><input type="number" id="termsBytes" value="250" min="1"></div>
+    </div>
+    <p class="small">Rules change, so every limit on this page is editable. The preset only fills in the numbers.</p>
+    <button class="btn-run" id="runBtn">Lint titles</button>
+    <div id="summary" class="small" style="margin-top:12px"></div>
+    <div id="results"></div>
+    <button class="btn-sub" id="dlViol" type="button" style="display:none">Download violations CSV</button>
+    <button class="btn-sub" id="dlClean" type="button" style="display:none">Download cleaned titles CSV</button>
+
+    <p class="privacy">Runs 100% in your browser. Your files never leave this device.</p>
+  </div>
+</main>
+<section class="how">
+  <h2>How it works</h2>
+  <ul>
+      <li>CSV upload with a title column picker, plus presets for Amazon (200), eBay (140), Etsy (140) and Shopify (255). Every limit is editable in the UI.</li>
+      <li>Checks length in characters and bytes, words repeated more than twice, banned characters, ALL-CAPS titles and promo words.</li>
+      <li>Byte length check for backend search terms against a 250 byte limit.</li>
+      <li>Auto-trim and cleanup suggestion per row, with a violations CSV and a cleaned titles CSV to download.</li>
+  </ul>
+</section>
+<footer>
+  <p>Built by Amir Hussain, operations manager and founder of <a href="https://aamirtechs.com" target="_blank" rel="noopener">AamirTechs: operations, customer support and e-commerce services</a>.</p>
+  <p><a href="https://github.com/aamirtechs" target="_blank" rel="noopener">More open source tools on GitHub</a></p>
+</footer>
+<script src="src/logic.js"></script>
+<script>
+
+var L = window.MarketplaceTitleLint;
+var lastResult = null;
+function currentOptions() {
+  var banned = document.getElementById("bannedChars").value.split("");
+  return {
+    maxChars: Number(document.getElementById("maxChars").value) || 200,
+    maxRepeats: Number(document.getElementById("maxRepeats").value) || 2,
+    bannedChars: banned,
+    maxTermsBytes: Number(document.getElementById("termsBytes").value) || 250,
+    titleColumn: document.getElementById("titleCol").value.trim() || undefined
+  };
+}
+document.getElementById("presetSel").addEventListener("change", function (e) {
+  var p = L.getPreset(e.target.value);
+  document.getElementById("maxChars").value = p.maxChars;
+  document.getElementById("maxRepeats").value = p.maxRepeats > 90 ? 2 : p.maxRepeats;
+});
+function run() {
+  lastResult = L.lintCSV(document.getElementById("csvInput").value, currentOptions());
+  var failed = lastResult.rows.filter(function (r) { return !r.lint.passed; }).length;
+  document.getElementById("summary").textContent = lastResult.rows.length + " titles linted using column \"" + (lastResult.titleColumn || "?") + "\". " + failed + " need fixes.";
+  var html = "<table><tr><th>Row</th><th>Title</th><th>Chars</th><th>Violations</th><th>Suggested fix</th></tr>";
+  lastResult.rows.forEach(function (r) {
+    var v = r.lint.violations.map(function (x) { return x.message; }).join("; ");
+    html += "<tr><td>" + r.row + "</td><td>" + r.title.replace(/</g, "&lt;") + "</td><td>" + r.lint.charCount + "</td><td>" + (v ? '<span class="flag">' + v.replace(/</g, "&lt;") + "</span>" : '<span class="ok">pass</span>') + "</td><td>" + r.suggestion.replace(/</g, "&lt;") + "</td></tr>";
+  });
+  html += "</table>";
+  document.getElementById("results").innerHTML = html;
+  document.getElementById("dlViol").style.display = "inline-block";
+  document.getElementById("dlClean").style.display = "inline-block";
+}
+function download(name, text) {
+  var blob = new Blob([text], { type: "text/csv" });
+  var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = name; a.click(); URL.revokeObjectURL(a.href);
+}
+document.getElementById("runBtn").addEventListener("click", run);
+document.getElementById("fileInput").addEventListener("change", function (e) {
+  var f = e.target.files[0]; if (!f) { return; }
+  var reader = new FileReader();
+  reader.onload = function () { document.getElementById("csvInput").value = String(reader.result); run(); };
+  reader.readAsText(f);
+});
+document.getElementById("dlViol").addEventListener("click", function () { download("title-violations.csv", L.buildViolationsCSV(lastResult)); });
+document.getElementById("dlClean").addEventListener("click", function () { download("title-cleaned.csv", L.buildCleanedCSV(lastResult)); });
+run();
+
+</script>
+</body>
+</html>
